@@ -17,7 +17,7 @@ async function sendTx(){
         { pubkey: payer.publicKey, isSigner: false, isWritable: false },
       ];
 
-      
+
     // That input will cause a memory overlap
     // because the program uses the input to select which byte will be increased.
 
@@ -60,8 +60,8 @@ async function createAccount(){
         fromPubkey: payer.publicKey,
         newAccountPubkey: newAccount.publicKey,
         lamports: 10000000, 
-        space: 0, 
-        programId: payer.publicKey,
+        space: 89, 
+        programId: programId,
       })
     );
   
